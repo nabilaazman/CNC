@@ -1,0 +1,57 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+
+	const int MATRIC_NO ="1728464";
+    string PASSWORD = "password123";
+	string password;
+	int matric_no;
+	bool user_validated = false;
+	bool succes_form = true;
+	string form;
+
+	do 
+	{
+		
+		cout << "Insert Matric no :";
+		cin >> matric_no;
+
+		cout << "Insert ID password:";
+		cin >> password;
+				
+				if ( matric_no == MATRIC_NO && password == PASSWORD)
+				{
+					cout << "Succes" << endl;
+					user_validated = true;
+				}
+				else
+				{
+					cout << "Try again" << endl;
+				}
+	
+	} while (user_validated == false);
+	
+	cout << "Fill the form" ;
+        if (form== true)
+        {
+            cout <<"Wait for the approval"<< endl;
+            succes_form= true;
+            
+            if(true){
+                cout<<"Congratulation!can go for the exchange program"<<endl;
+            }
+            else
+            {
+                cout<<"Try again next semester"<<endl;
+            }  
+        }
+        else
+        {
+            cout <<"The form are not valid"<<endl;
+        }
+	
+} 
